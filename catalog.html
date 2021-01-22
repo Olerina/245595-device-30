@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Девайс</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="main-header container">
+    <div class="header-logo">
+      <a href="index.html">Device</a>
+    </div>
+    <div class="navigation">
+      <form action="https://echo.htmlacademy.ru" method="get" class="search-form">
+        <label for="search" class="visually-hidden">Поиск по сайту</label>
+        <label for="submit" class="visually-hidden">Найти</label>
+        <input type="search" name="search" placeholder="Поиск по сайту" id="search" class="search-form-field">
+        <input type="submit" value="Найти" id="submit">
+      </form>
+      <ul>
+        <li>
+          <!--Блок незарегистрированного пользователя
+          <div class="user-block">
+            <div class="user-out">
+              <a class="login user-btn" href="#">Войти</a>
+            </div>
+          </div>
+          -->
+          <!--Блок зарегистрированного пользователя, согласно макета-->
+          <div class="user-block">
+            <div class="user-in">
+              <div class="user-btn">
+                <a class="profile" href="#">Валентин Петухов</a>
+                <a class="exit" href="#">Выйти</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="#">Сравнить</a>
+        </li>
+        <li>
+          <a href="#">Корзина</a>
+        </li>
+      </ul>
+    </div>
+    <nav class="header-nav">
+      <ul class="main-catalog">
+        <li>
+          <a class="index-catalog main-links" href="catalog.html">Каталог товаров</a>
+          <ul class="catalog-menu">
+            <li><a href="#">Виртуальная реальность</a></li>
+            <li><a href="#">Моноподы для селфи</a></li>
+            <li><a href="#">Экшн-камеры</a></li>
+            <li><a href="#">Фитнесс-браслеты</a></li>
+            <li><a href="#">Умные часы</a></li>
+            <li><a href="#">Квадрокоптеры</a></li>
+          </ul>
+        </li>
+        <li><a class="main-links" href="#">Доставка</a></li>
+        <li><a class="main-links" href="#">Гарантия</a></li>
+        <li><a class="main-links" href="#">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="container">
+      <div class="top-heading catalog-heading">
+        <h1 class="subject">Моноподы для селфи</h1>
+      </div>
+      <div class="breadcrumbs">
+        <a class="breadcrumbs-item" href="index.html">Главная</a>
+        <a class="breadcrumbs-item" href="#">Каталог товаров</a>
+        <a class="breadcrumbs-item">Моноподы для селфи</a>
+      </div>
+    </div>
+    <div class="catalog-content">
+      <div class="catalog-titles container">
+        <p class="filter">Фильтр:</p>
+        <div class="catalog-sort">
+          <p>Сортировка:</p>
+          <ul class="sorting-left">
+            <li class="sorting-left-item">
+              <a class="sorting-item active-sorting">По цене</a>
+            </li>
+            <li class="sorting-left-item">
+              <a class="sorting-item" href="#">По типу</a>
+            </li>
+            <li class="sorting-left-item">
+              <a class="sorting-item last-sorting" href="#">По популярности</a>
+            </li>
+          </ul>
+          <div class="sorting-right">
+            <a class="sorting-item-up sorting-active" href="#">По возрастанию</a>
+            <a class="sorting-item-down" href="#">По убыванию</a>
+          </div>
+        </div>
+      </div>
+      <div class="catalog-left">
+        <div class="container">
+          <form class="making-item" action="https://echo.htmlacademy.ru" method="post">
+            <div class="range-filter">
+              <p class="price-selection">Стоимость:</p>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar" style="margin-left: 0; width: 80%"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price"><input name="min-price" type="text" value="от 0"></label>
+                <label class="max-price"><input name="max-price" type="text" value="до 5000"></label>
+              </div>
+            </div>
+            <section class="option color">
+              <h2 class="option-title">Цвет:</h2>
+              <ul class="color-list">
+                <li class="color-item">
+                  <input type="checkbox" checked id="black">
+                  <label for="black">Черный</label>
+                </li>
+                <li class="color-item">
+                  <input type="checkbox" id="white">
+                  <label for="white">Белый</label>
+                </li>
+                <li class="color-item">
+                  <input type="checkbox" checked id="blue">
+                  <label for="blue">Синий</label>
+                </li>
+                <li class="color-item">
+                  <input type="checkbox" checked id="red">
+                  <label for="red">Красный</label>
+                </li>
+                <li class="color-item">
+                  <input type="checkbox" id="pink">
+                  <label for="pink">Розовый</label>
+                </li>
+              </ul>
+            </section>
+            <section class="option energy">
+              <h2 class="option-title">Bluetooth:</h2>
+              <ul class="energy-list">
+                <li class="energy-item">
+                  <input type="radio" id="yes" name="radio" checked>
+                  <label for="yes">Есть</label>
+                </li>
+                <li class="energy-item">
+                  <input type="radio" id="no" name="radio">
+                  <label for="no">Нет</label>
+                </li>
+              </ul>
+            </section>
+            <input type="submit" value="Показать" class="catalog-submit btn" id="catalog-submit">
+            <label for="catalog-submit" class="visually-hidden">Показать</label>
+          </form>
+        </div>
+        <div class="catalog-right">
+          <div class="sorting">
+          </div>
+          <div class="catalog-item catalog-item-layout container">
+            <article class="top-item">
+              <div class="top-item-btn">
+                  <a class="item-buy btn" href="#">В корзину</a>
+                  <a class="item-bookmark" href="#">Добавить к сравнению</a>
+                </div>
+              <div class="item-image">
+                <img src="#" width="218" height="156" alt="Любительская селфи-палка">
+              </div>
+              <h3><a  class="top-item-title" href="#">Любительская селфи-палка</a></h3>
+              <div class="top-item-price">500 руб.</div>
+            </article>
+            <article class="top-item">
+              <div class="top-item-btn">
+                  <a class="item-buy btn" href="#">В корзину</a>
+                  <a class="item-bookmark" href="#">Добавить к сравнению</a>
+                </div>
+              <div class="item-image">
+                <img src="#" width="218" height="156" alt="Профессиональная селфи-палка">
+              </div>
+              <h3><a  class="top-item-title" href="#">Профессиональная селфи-палка</a></h3>
+              <div class="top-item-price">1500 руб.</div>
+            </article>
+            <article class="top-item">
+              <div class="top-item-btn">
+                  <a class="item-buy btn" href="#">В корзину</a>
+                  <a class="item-bookmark" href="#">Добавить к сравнению</a>
+                </div>
+              <div class="item-image">
+                <img src="#" width="218" height="156" alt="Непотопляемая селфи-палка">
+              </div>
+              <h3><a  class="top-item-title" href="#">Непотопляемая селфи-палка</a></h3>
+              <div class="top-item-price">2500 руб.</div>
+            </article>
+            <article class="top-item top-new">
+              <div class="top-item-btn">
+                  <a class="item-buy btn" href="#">В корзину</a>
+                  <a class="item-bookmark" href="#">Добавить к сравнению</a>
+                </div>
+              <div class="item-image">
+                <img src="#" width="218" height="156" alt="Селфи-палка Следуй за мной">
+              </div>
+              <h3><a  class="top-item-title" href="#">Селфи-палка "Следуй за мной"</a></h3>
+              <div class="top-item-price">4900 руб.</div>
+            </article>
+            <div class="catalog-navigation">
+              <a href="prev" class="next-page">Назад</a>
+              <a class="page-number active-nav">1</a>
+              <a href="#2" class="page-number">2</a>
+              <a href="#3" class="page-number">3</a>
+              <a href="next" class="next-page">Вперед</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-top">
+      <div class="footer-top-layout container">
+        <div class="footer-logo">
+          <a href="index.html" class="footer-logo-link">Device</a>
+        </div>
+        <nav class="footer-nav">
+          <ul>
+            <li>
+              <!--Блок незарегистрированного пользователя
+              <div class="user-block">
+                <div class="user-out">
+                  <a class="login user-btn" href="#">Войти</a>
+                </div>
+              </div>
+              -->
+              <!--Блок зарегистрированного пользователя, согласно макета-->
+              <div class="user-block">
+                <div class="user-in">
+                  <div class="user-btn">
+                    <a class="profile" href="#">Валентин Петухов</a>
+                    <a class="exit" href="#">Выйти</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="#">Сравнить</a>
+            </li>
+            <li>
+              <a href="#">Корзина</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer-contacts">
+          <p>г. Москва, ул. Строителей, 15</p>
+        </div>
+        <nav class="footer-nav sub-nav">
+          <a href="#">Доставка</a>
+          <a href="#">Гарантия</a>
+          <a href="#">Контакты</a>
+        </nav>
+        <div class="tel">
+          <p>Тел.: +7 (495) 495-95-95</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom-layout container">
+        <div class="footer-social">
+          <a class="social-btn social-btn-vk" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-fb" href="#">Инстаграм</a>
+          <a class="social-btn social-btn-inst" href="#">Твиттер</a>
+        </div>
+        <div class="footer-creator">
+          <a class="footer-link" href="https://htmlacademy.ru">htmlacademy.ru</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="modal-write">
+    <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+    <form id="write-form" class="modal-write-form" action="https://echo.htmlacademy.ru" method="post">
+      <label class="user-name" for="user-name">Ваше имя:</label>
+      <label class="user-email" for="email">Ваш e-mail:</label>
+      <input id="user-name" type="text" name="username" pattern="[A-Za-zА-Яа-яЁё]" placeholder="Представьтесь, пожалуйста" required>
+      <input id="email" type="email" name="email" placeholder="Для отправки ответа" required>
+      <label for="user-comment" class="user-comment">Текст письма:</label>
+      <textarea id="user-comment" name="comment" rows="6" required>В свободной форме</textarea>
+    </form>
+    <div class="write-submit btn">
+      <input type="submit" value="Отправить" class="btn write-btn" form="write-form" id="write-submit">
+      <label class="visually-hidden" for="write-submit" onclick="validate(this.form)">Отправить</label>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

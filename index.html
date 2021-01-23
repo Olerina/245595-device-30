@@ -7,50 +7,34 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <!---<p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>--->
     <header class="main-header">
-      <div class="header-logo">
-        <a href="#">Device</a>
-      </div>
+      <a href="#">Device</a>
       <div class="navigation">
         <form action="https://echo.htmlacademy.ru" method="get" class="search-form">
           <label for="search" class="visually-hidden">Поиск по сайту</label>
-          <label for="submit" class="visually-hidden">Найти</label>
           <input type="search" name="search" placeholder="Поиск по сайту" id="search" class="search-form-field">
-          <input type="submit" value="Найти" id="submit">
+          <button type="submit" value="Найти" id="submit"></button>
         </form>
-        <ul>
-          <li>
+        <div class="user-navigation">
+          <div class="autorisation-block">
             <!--Блок незарегистрированного пользователя, согласно макета-->
-            <div class="user-block">
-              <div class="user-out">
-                <a class="login user-btn" href="#">Войти</a>
-              </div>
-            </div>
-            <!--Блок зарегистрированного пользователя
-            <div class="user-block">
-              <div class="user-in">
-                <div class="user-btn">
-                  <a class="profile" href="#">Валентин Петухов</a>
-                  <a class="exit" href="#">Выйти</a>
-                </div>
-              </div>
-            </div>
+            <a class="login user-btn user-link" href="#">Войти</a>
+            <!--Блок зарегистрированного пользователя. block один на две ссылки для удобства построения сетки
+            <a class="profile user-link" href="#">Валентин Петухов</a>
+            <a class="exit user-link" href="#">Выйти</a>
             -->
-          </li>
-          <li>
-            <a href="#">Сравнить</a>
-          </li>
-          <li>
-            <a href="#">Корзина</a>
-          </li>
-        </ul>
+          </div>
+          <div class="user-block">
+            <a href="#" class="user-link">Сравнить</a>
+            <a href="#" class="user-link">Корзина</a>
+          </div>
+        </div>
       </div>
       <nav class="header-nav">
-        <ul class="main-catalog">
-          <li>
-            <a class="index-catalog main-links" href="catalog.html">Каталог товаров</a>
-            <ul class="catalog-menu">
+        <ul class="main-navigation">
+          <li class="main-navigation-item has-sublist">
+            <a class="main-navigation-link" href="catalog.html">Каталог товаров</a>
+            <ul class="sublist">
               <li><a href="#">Виртуальная реальность</a></li>
               <li><a href="#">Моноподы для селфи</a></li>
               <li><a href="#">Экшн-камеры</a></li>
@@ -59,26 +43,22 @@
               <li><a href="#">Квадрокоптер</a></li>
             </ul>
           </li>
-          <li><a class="main-links" href="#">Доставка</a></li>
-          <li><a class="main-links" href="#">Гарантия</a></li>
-          <li><a class="main-links" href="#">Контакты</a></li>
+          <li class="main-navigation-item"><a class="main-navigation-link" href="#">Доставка</a></li>
+          <li class="main-navigation-item"><a class="main-navigation-link" href="#">Гарантия</a></li>
+          <li class="main-navigation-item"><a class="main-navigation-link" href="#">Контакты</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <h1 class="visually-hidden">Магазин гаджетов Device</h1>
       <section class="promo-slider container">
-        <input type="radio" id="btn-1" name="toggle" checked="checked">
-        <input type="radio" id="btn-2" name="toggle">
-        <input type="radio" id="btn-3" name="toggle">
         <div class="slider-controls">
-          <label for="btn-1"></label>
-          <label for="btn-2"></label>
-          <label for="btn-3"></label>
+          <button type="button" name="toggle" disabled></button>
+          <button type="button" name="toggle"></button>
+          <button type="button" name="toggle"></button>
         </div>
-        <article class="promo-slide-1">
+        <article class="promo-slide promo-slide-1">
           <img src="#" alt="Самая длинная палка для сэлфи" width="384" height="486">
-          <p class="number-slide">01</p>
           <h2>Делай селфи, как Бен Стиллер!</h2>
           <p class="slider-text">
             Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
@@ -91,15 +71,14 @@
               <td>Карбон</td>
             </tr>
             <tr class="features-type">
-              <td>Длина палки</td>
-              <td>Вес палки</td>
-              <td>Материал</td>
+              <th>Длина палки</th>
+              <th>Вес палки</th>
+              <th>Материал</th>
             </tr>
           </table>
         </article>
-        <article class="promo-slide-2">
+        <article class="promo-slide promo-slide-2">
           <img src="#" alt="Умные часы" width="345" height="485">
-          <p class="number-slide">02</p>
           <h2>Худеем правильно!</h2>
           <p class="slider-text">
             Мотивирующие фитнесс-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
@@ -110,13 +89,12 @@
               <td>48 часов</td>
             </tr>
             <tr class="features-type">
-              <td>Без подзарядки</td>
+              <th>Без подзарядки</th>
             </tr>
           </table>
         </article>
-        <article class="promo-slide-3">
+        <article class="promo-slide promo-slide-3">
           <img src="#" alt="Квадрокоптер" width="526" height="334">
-          <p class="number-slide">03</p>
           <h2>Порхает как бабочка, жалит как пчела!</h2>
           <p class="slider-text">
             Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
@@ -128,45 +106,45 @@
               <td>50 м</td>
             </tr>
             <tr class="features-type">
-              <td>Дальность полета</td>
-              <td>Радиус поражения</td>
+              <th>Дальность полета</th>
+              <th>Радиус поражения</th>
             </tr>
           </table>
         </article>
       </section>
       <section class="popular container">
         <a href="#" class="popular-link">
-          <div class="popular-block virtual">
+          <div class="popular-block">
             <img src="#" width="97" height="55" alt="virtual">
           </div>
           <p>Виртуальная реальность</p>
         </a>
         <a href="#" class="popular-link">
-          <div class="popular-block monopods">
+          <div class="popular-block">
             <img src="#" width="86" height="117" alt="monopods">
           </div>
           <p>Моноподы для селфи</p>
         </a>
         <a href="#" class="popular-link">
-          <div class="popular-block cameras">
+          <div class="popular-block">
             <img src="#" width="71" height="87" alt="cameras">
           </div>
           <p>Экшн-камеры</p>
         </a>
         <a href="#" class="popular-link">
-          <div class="popular-block bracelets">
+          <div class="popular-block">
             <img src="img/popular-4.svg" width="107" height="65" alt="bracelets">
           </div>
           <p>Фитнес-браслеты</p>
         </a>
         <a href="#" class="popular-link">
-          <div class="popular-block clocks">
+          <div class="popular-block">
             <img src="#" width="56" height="98" alt="clocks">
           </div>
           <p>Умные часы</p>
         </a>
         <a href="#" class="popular-link">
-          <div class="popular-block quadro">
+          <div class="popular-block">
             <img src="#" width="132" height="69" alt="quadro">
           </div>
           <p>Квадрокоптеры</p>
@@ -180,7 +158,7 @@
             <a class="service-slider-item" href="#">Кредит</a>
           </div>
           <div class="service-slider-content">
-            <div class="service-item service-delivery">
+            <div class="service-item service-delivery active">
               <div class="service-slogan">
                 <h2>Доставка</h2>
                 <p class="service-text">
@@ -188,14 +166,15 @@
                 </p>
               </div>
             </div>
-            <div class="service-item service-guarantee slider-service-hide">
+            <div class="service-item service-guarantee">
               <div class="service-slogan">
                 <h2>Гарантия</h2>
                 <p class="service-text">
                   Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
+                </p>
               </div>
             </div>
-            <div class="service-item service-credit slider-service-hide">
+            <div class="service-item service-credit">
               <div class="service-slogan">
                 <h2>Кредит</h2>
                 <p class="service-text">
@@ -210,24 +189,20 @@
         <div class="logotypes-item">
           <a class="logotypes-btn" href="#">
             <img src="#" width="260" height="100" alt="djl">
-            <img src="#" width="260" height="100" alt="djl">
           </a>
         </div>
         <div class="logotypes-item">
           <a class="logotypes-btn" href="#">
-            <img src="#" width="260" height="100" alt="Adgets">
             <img src="#" width="260" height="100" alt="Adgets">
           </a>
         </div>
         <div class="logotypes-item">
           <a class="logotypes-btn" href="#">
             <img src="#" width="260" height="100" alt="Gopro">
-            <img src="#" width="260" height="100" alt="Gopro">
           </a>
         </div>
         <div class="logotypes-item">
           <a class="logotypes-btn" href="#">
-            <img src="#" width="260" height="100" alt="Vive">
             <img src="#" width="260" height="100" alt="Vive">
           </a>
         </div>
@@ -260,47 +235,33 @@
     <footer>
       <div class="footer-top">
         <div class="footer-top-layout container">
-          <div class="footer-logo">
-            <a class="footer-logo-link">Device</a>
-          </div>
+          <a class="footer-logo-link">Device</a>
           <nav class="footer-nav">
-            <ul>
-              <li>
+            <div class="user-navigation">
+              <div class="autorisation-block">
                 <!--Блок незарегистрированного пользователя, согласно макета-->
-                <div class="user-block">
-                  <div class="user-out">
-                    <a class="login user-btn" href="#">Войти</a>
-                  </div>
-                </div>
-                <!--Блок зарегистрированного пользователя
-                <div class="user-block">
-                  <div class="user-in">
-                    <div class="user-btn">
-                      <a class="profile" href="#">Валентин Петухов</a>
-                      <a class="exit" href="#">Выйти</a>
-                    </div>
-                  </div>
-                </div>
+                <a class="login user-btn user-link" href="#">Войти</a>
+                <!--Блок зарегистрированного пользователя. block один на две ссылки для удобства построения сетки
+                <a class="profile user-link" href="#">Валентин Петухов</a>
+                <a class="exit user-link" href="#">Выйти</a>
                 -->
-              </li>
-              <li>
-                <a href="#">Сравнить</a>
-              </li>
-              <li>
-                <a href="#">Корзина</a>
-              </li>
-            </ul>
+              </div>
+              <div class="user-block">
+                <a href="#" class="user-link">Сравнить</a>
+                <a href="#" class="user-link">Корзина</a>
+              </div>
+            </div>
           </nav>
           <div class="footer-contacts">
             <p>г. Москва, ул. Строителей, 15</p>
           </div>
-          <nav class="footer-nav sub-nav">
+          <nav class="sub-nav">
             <a href="#">Доставка</a>
             <a href="#">Гарантия</a>
             <a href="#">Контакты</a>
           </nav>
           <div class="tel">
-            <p>Тел.: +7 (495) 495-95-95</p>
+            Тел.: <a href="tel:+74954959595">+7 (495) 495-95-95</a>
           </div>
         </div>
       </div>
@@ -321,16 +282,13 @@
       <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
       <form id="write-form" class="modal-write-form" action="https://echo.htmlacademy.ru" method="post">
         <label class="user-name" for="user-name">Ваше имя:</label>
+        <input id="user-name" type="text" name="username" placeholder="Представьтесь, пожалуйста" required>
         <label class="user-email" for="email">Ваш e-mail:</label>
-        <input id="user-name" type="text" name="username" pattern="[A-Za-zА-Яа-яЁё]" placeholder="Представьтесь, пожалуйста" required>
         <input id="email" type="email" name="email" placeholder="Для отправки ответа" required>
         <label for="user-comment" class="user-comment">Текст письма:</label>
         <textarea id="user-comment" name="comment" rows="6" required>В свободной форме</textarea>
       </form>
-      <div class="write-submit btn">
-        <input type="submit" value="Отправить" class="btn write-btn" form="write-form" id="write-submit">
-        <label class="visually-hidden" for="write-submit" onclick="validate(this.form)">Отправить</label>
-      </div>
+      <button type="submit" class="write-submit btn">Отправить</button>
     </div>
     <div class="modal-content-map">
       <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>

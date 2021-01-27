@@ -139,12 +139,10 @@
               </li>
             </ul>
           </section>
-          <button type="submit" name="button">Показать</button>
+          <button type="submit">Показать</button>
         </form>
       </div>
       <div class="catalog-right">
-        <div class="sorting">
-        </div>
         <div class="catalog-item catalog-item-layout">
           <article class="top-item">
             <div class="top-item-btn">
@@ -251,16 +249,13 @@
     <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
     <form id="write-form" class="modal-write-form" action="https://echo.htmlacademy.ru" method="post">
       <label class="user-name" for="user-name">Ваше имя:</label>
+      <input id="user-name" type="text" name="username" placeholder="Представьтесь, пожалуйста" required>
       <label class="user-email" for="email">Ваш e-mail:</label>
-      <input id="user-name" type="text" name="username" pattern="[A-Za-zА-Яа-яЁё]" placeholder="Представьтесь, пожалуйста" required>
       <input id="email" type="email" name="email" placeholder="Для отправки ответа" required>
       <label for="user-comment" class="user-comment">Текст письма:</label>
       <textarea id="user-comment" name="comment" rows="6" required>В свободной форме</textarea>
+      <button type="submit" class="write-submit btn">Отправить</button>
     </form>
-    <div class="write-submit btn">
-      <input type="submit" value="Отправить" class="btn write-btn" form="write-form" id="write-submit">
-      <label class="visually-hidden" for="write-submit" onclick="validate(this.form)">Отправить</label>
-    </div>
   </div>
   <script src="js/script.js"></script>
 </body>

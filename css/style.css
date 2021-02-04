@@ -70,7 +70,7 @@ img {
   line-height: 22px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  outline: none;
+  /*outline: none;*/
 }
 
 .button:hover {
@@ -115,19 +115,25 @@ img {
   font-size: 15px;
   line-height: 36px;
   color: var(--basic-black);
-  opacity: 0.3;
   background-color: var(--special-yellow-light);
   border: none;
 }
 
-.search-form-field:hover {
-  opacity: 0.6;
+.search-form-field::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.search-form-field:hover::placeholder {
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .search-form-field:focus {
-  opacity: 1;
   outline: none;
   border-bottom: 2px solid var(--basic-black);
+}
+
+.search-form-field:focus::placeholder {
+  color: var(--basic-black);
 }
 
 .search-button {
@@ -323,14 +329,17 @@ img {
 .footer-logo-link:active {
   opacity: 0.3;
 }
+
 .footer-navigation {
   line-height: 20px;
-color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.7);
 }
+
 .footer-navigation .user-link:hover {
   color: var(--basic-white);
   opacity: 1;
 }
+
 .footer-navigation .user-link:focus {
   color: var(--basic-white);
   opacity: 0.3;
@@ -339,71 +348,88 @@ color: rgba(255, 255, 255, 0.7);
 .footer-contacts {
   line-height: 20px;
 }
+
 .sub-nav {
   font-family: "Gilroy", "Arial", sans-serif;
   font-style: normal;
-font-weight: 800;
-font-size: 18px;
-line-height: 22px;
-letter-spacing: 0.2em;
-text-transform: uppercase;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
 }
+
 .sub-nav-item:hover {
   opacity: 0.6;
 }
+
 .sub-nav-item:focus {
   opacity: 0.3;
 }
+
 .tel {
   line-height: 20px;
 }
+
 .social-button {
   opacity: 0.3;
 }
+
 .social-button:hover {
   opacity: 0.6;
 }
+
 .social-button:focus {
   opacity: 0.1;
 }
+
 .footer-link:hover {
   opacity: 0.6;
 }
+
 .footer-link:focus {
   opacity: 0.3;
 }
+
+
 /* Modal */
+
 .write-submit {
   border: none;
   background-color: inherit;
 }
+
 .modal-label {
   font-family: "Gilroy", "Arial", sans-serif;
   font-style: normal;
-font-weight: 800;
-font-size: 18px;
-line-height: 22px;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
 }
+
 .modal-input {
   font-family: "OpenSans", "Arial", sans-serif;
   font-style: normal;
-font-weight: normal;
+  font-weight: normal;
   font-size: 14px;
-line-height: 19px;
-color: rgba(0, 0, 0, 0.4);
-background-color: var(--special-grey-light);
-border: none;
+  line-height: 19px;
+  color: rgba(0, 0, 0, 0.4);
+  background-color: var(--special-grey-light);
+  border: 2px solid var(--special-grey-light);
 }
+
 .modal-input:hover {
   background-color: var(--special-grey);
   color: rgba(0, 0, 0, 0.4);
 }
+
 .modal-input:focus {
   background-color: var(--basic-white);
   border: 2px solid var(--special-yellow-light);
   color: var(--basic-dark);
   outline: none;
 }
+
 .modal-input:invalid:not(:placeholder-shown) {
   background-color: var(--status);
   color: rgba(0, 0, 0, 0.4);

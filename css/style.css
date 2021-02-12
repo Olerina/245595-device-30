@@ -101,7 +101,6 @@ img {
 
 .button {
   font-family: "Gilroy", "Arial", sans-serif;
-  font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
@@ -197,7 +196,6 @@ img {
 
 .main-navigation-item {
   font-family: "Gilroy", "Arial", sans-serif;
-  font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
@@ -216,7 +214,6 @@ img {
 .sublist {
   font-family: "OpenSans", "Arial", sans-serif;
   text-transform: none;
-  font-style: normal;
   font-weight: 300;
   font-size: 15px;
   line-height: 20px;
@@ -228,7 +225,6 @@ img {
 
 .promo-slide-heading {
   font-family: "Gilroy", "Arial", sans-serif;
-  font-style: normal;
   font-weight: 800;
   font-size: 47px;
   line-height: 58px;
@@ -240,7 +236,6 @@ img {
 
 .features-value {
   font-family: "Gilroy", "Arial", sans-serif;
-  font-style: normal;
   font-size: 36px;
   line-height: 42px;
   letter-spacing: 0.1em;
@@ -248,7 +243,6 @@ img {
 
 .features-type {
   font-family: "Gilroy", "Arial", sans-serif;
-  font-style: normal;
   font-size: 13px;
   line-height: 15px;
   letter-spacing: 0.1em;
@@ -263,7 +257,6 @@ img {
 
 .popular {
   font-family: "Gilroy", "Arial", sans-serif;
-  font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
@@ -305,7 +298,6 @@ img {
 
 .service-slogan-heading {
   font-family: "Gilroy", "Arial", sans-serif;
-  font-style: normal;
   font-weight: 800;
   font-size: 47px;
   line-height: 58px;
@@ -332,7 +324,6 @@ img {
 
 .information-heading {
   font-family: "Gilroy", "Arial", sans-serif;
-  font-style: normal;
   font-weight: 800;
   font-size: 47px;
   line-height: 58px;
@@ -345,7 +336,6 @@ img {
 
 .partners {
   font-family: "Gilroy", "Arial", sans-serif;
-  font-style: normal;
   font-weight: 800;
   font-size: 16px;
   line-height: 28px;
@@ -388,7 +378,6 @@ img {
 
 .sub-nav {
   font-family: "Gilroy", "Arial", sans-serif;
-  font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
@@ -438,7 +427,6 @@ img {
 
 .modal-label {
   font-family: "Gilroy", "Arial", sans-serif;
-  font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
@@ -446,7 +434,6 @@ img {
 
 .modal-input {
   font-family: "OpenSans", "Arial", sans-serif;
-  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 19px;
@@ -477,8 +464,7 @@ img {
 /* Catalog */
 
 .subject {
-  font-family: Gilroy;
-  font-style: normal;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 47px;
   line-height: 58px;
@@ -490,16 +476,17 @@ img {
   line-height: 19px;
   color: rgba(0, 0, 0, 0.3);
 }
+
 .breadcrumbs-item:hover {
   color: rgba(0, 0, 0, 0.6);
 }
+
 .breadcrumbs-item:focus {
   color: rgba(0, 0, 0, 0.1);
 }
 
 .filter, .catalog-sort p {
-  font-family: Gilroy;
-  font-style: normal;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 16px;
   line-height: 20px;
@@ -512,28 +499,30 @@ img {
 }
 
 .sorting-item {
-  font-family: Open Sans;
-  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 19px;
   color: rgba(0, 0, 0, 0.3)
 }
-.sorting-item:hover{
+
+.sorting-item:hover {
   color: rgba(0, 0, 0, 0.6)
 }
+
 .sorting-item:focus {
   color: var(--basic-black);
 }
+
 .active-sorting {
   color: var(--basic-black);
 }
-.active-sorting:hover{
+
+.active-sorting:hover {
   color: var(--basic-black);
 }
+
 .price-selection {
-  font-family: Gilroy;
-  font-style: normal;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 14px;
   line-height: 17px;
@@ -541,16 +530,14 @@ img {
 }
 
 .price-controls label {
-  font-family: Gilroy;
-  font-style: normal;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 16px;
 }
 
 .option-title {
-  font-family: Gilroy;
-  font-style: normal;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 14px;
   line-height: 17px;
@@ -561,9 +548,11 @@ img {
   font-size: 14px;
   line-height: 19px;
 }
-.option-input:disabled + label {
+
+.option-input:disabled+label {
   color: var(--special-dicabled);
 }
+
 .making-item-button {
   border: none;
   background-color: inherit;
@@ -575,15 +564,17 @@ img {
   letter-spacing: 0.1em;
   color: rgba(0, 0, 0, 0.5);
 }
+
 .item-bookmark:hover {
   color: var(--basic-black);
 }
+
 .item-bookmark:focus {
   color: rgba(0, 0, 0, 0.2);
 }
+
 .top-item-title {
-  font-family: Gilroy;
-  font-style: normal;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
@@ -591,8 +582,7 @@ img {
 }
 
 .top-item-price {
-  font-family: Gilroy;
-  font-style: normal;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 18px;
@@ -600,8 +590,7 @@ img {
 }
 
 .catalog-navigation {
-  font-family: Gilroy;
-  font-style: normal;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 16px;
   line-height: 20px;

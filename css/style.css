@@ -64,6 +64,7 @@
   --special-grey-light: #f2f2f2;
   --special-grey: #eaeaea;
   --status: #f6dada;
+  --special-dicabled: #a6a6a6;
 }
 
 
@@ -470,4 +471,140 @@ img {
   background-color: var(--status);
   color: rgba(0, 0, 0, 0.4);
   border: none;
+}
+
+
+/* Catalog */
+
+.subject {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 58px;
+  color: var(--basic-black);
+}
+
+.breadcrumbs-item {
+  font-size: 14px;
+  line-height: 19px;
+  color: rgba(0, 0, 0, 0.3);
+}
+.breadcrumbs-item:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+.breadcrumbs-item:focus {
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.filter, .catalog-sort p {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.sorting-left, .color-list, .energy-list {
+  list-style: none;
+}
+
+.sorting-item {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: rgba(0, 0, 0, 0.3)
+}
+.sorting-item:hover{
+  color: rgba(0, 0, 0, 0.6)
+}
+.sorting-item:focus {
+  color: var(--basic-black);
+}
+.active-sorting {
+  color: var(--basic-black);
+}
+.active-sorting:hover{
+  color: var(--basic-black);
+}
+.price-selection {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.1em;
+}
+
+.price-controls label {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.option-title {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.1em;
+}
+
+.color-item {
+  font-size: 14px;
+  line-height: 19px;
+}
+.option-input:disabled + label {
+  color: var(--special-dicabled);
+}
+.making-item-button {
+  border: none;
+  background-color: inherit;
+}
+
+.item-bookmark {
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  color: rgba(0, 0, 0, 0.5);
+}
+.item-bookmark:hover {
+  color: var(--basic-black);
+}
+.item-bookmark:focus {
+  color: rgba(0, 0, 0, 0.2);
+}
+.top-item-title {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+}
+
+.top-item-price {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+}
+
+.catalog-navigation {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }

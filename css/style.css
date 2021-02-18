@@ -95,6 +95,21 @@ img {
 
 /* Common */
 
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 20px;
+}
 .visually-hidden {
   display: none;
 }
@@ -123,6 +138,8 @@ img {
 
 .main-header {
   background-color: var(--special-yellow-light);
+  display: grid;
+  padding: 20px 60px 45px 60px;
 }
 
 .main-logo:hover {
@@ -135,6 +152,8 @@ img {
 
 .navigation {
   line-height: 20px;
+  display: grid;
+  grid-template-columns: 1fr min-content;
 }
 
 .user-link {}
@@ -261,10 +280,14 @@ img {
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.05em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .popular-block {
   background-color: var(--special-yellow-light);
+  width: 160px;
+  height: 160px;
 }
 
 .popular-link:hover .popular-block {
@@ -285,6 +308,11 @@ img {
 
 
 /* Services */
+
+.service-layout {
+  display: grid;
+  grid-template-columns: 284px 1fr;
+}
 
 .service-slider-item:focus {
   background-color: var(--basic-black);
@@ -311,6 +339,11 @@ img {
 
 /* Logotipes */
 
+.logotypes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
 .logotypes-item {
   filter: grayscale(100%);
 }
@@ -321,6 +354,11 @@ img {
 
 
 /* Information */
+
+.information {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 
 .information-heading {
   font-family: "Gilroy", "Arial", sans-serif;
@@ -347,6 +385,17 @@ img {
 .main-footer {
   background-color: var(--basic-dark);
   color: var(--basic-white);
+  display: grid;
+}
+
+.footer-top-layout {
+  display: grid;
+  grid-template-columns: max-content 1fr max-content;
+}
+
+.footer-bottom-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr max-content;
 }
 
 .footer-logo-link:hover {
@@ -360,6 +409,7 @@ img {
 .footer-navigation {
   line-height: 20px;
   color: rgba(255, 255, 255, 0.7);
+  grid-column-start: 3;
 }
 
 .footer-navigation .user-link:hover {
@@ -383,6 +433,7 @@ img {
   line-height: 22px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  justify-self: center;
 }
 
 .sub-nav-item:hover {
@@ -395,6 +446,10 @@ img {
 
 .tel {
   line-height: 20px;
+}
+
+.footer-social {
+  grid-column-start: 2;
 }
 
 .social-button {

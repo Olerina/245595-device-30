@@ -107,7 +107,8 @@ img {
 }
 
 .container {
-  width: 1200px;
+  width: 1160px;
+  margin: 0 auto;
   padding: 0 20px;
 }
 .visually-hidden {
@@ -385,7 +386,6 @@ img {
 .main-footer {
   background-color: var(--basic-dark);
   color: var(--basic-white);
-  display: grid;
 }
 
 .footer-top-layout {

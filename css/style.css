@@ -588,7 +588,8 @@ img {
 
 .catalog-heading {
   width: 1140px;
-  padding-left: 60px;
+  padding: 0 60px;
+  box-sizing: border-box;
   margin: 0 auto;
 }
 
@@ -697,9 +698,14 @@ img {
   background-color: inherit;
 }
 
+.catalog-right {
+  padding-left: 72px;
+}
+
 .catalog-item {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 48px 40px;
 }
 
 .item-bookmark {

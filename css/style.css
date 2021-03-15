@@ -113,7 +113,11 @@ img {
 }
 
 .visually-hidden {
-  display: none;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 .button {
@@ -124,7 +128,7 @@ img {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   height: 40px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   /*outline: none;*/
@@ -170,15 +174,16 @@ img {
   line-height: 20px;
   display: flex;
   justify-content: flex-start;
-  padding-top: 34px;
+  padding-top: 18px;
   margin-bottom: 28px;
-  height: 50px
+  /*height: 50px;*/
 }
 
 .search-form {
   display: flex;
   width: 440px;
   margin-right: 100px;
+  align-items: center;
 }
 
 .search-form-field {
@@ -189,7 +194,7 @@ img {
   border: none;
   width: 356px;
   padding: 0 0 0 40px;
-  border-bottom: 2px solid var(--special-yellow-light);
+  border-bottom: 2px solid transparent;
 }
 
 .search-form-field::placeholder {
@@ -214,10 +219,14 @@ img {
   line-height: 36px;
   color: var(--basic-black);
   background-color: var(--special-yellow-light);
-  border: 2px solid var(--basic-black);
+  border: 2px solid transparent;
   padding: 0;
   width: 80px;
   height: 50px;
+}
+
+.search-form-field:focus + .search-button {
+    border: 2px solid var(--basic-black);
 }
 
 .search-button:hover {
@@ -231,14 +240,15 @@ img {
 }
 
 .user-navigation {
-  display: grid;
-  grid-template-columns: 280px 220px;
-  width: max-content;
-  align-content: center;
+  display: flex;
+  /*grid-template-columns: 280px 220px;*/
+  width: 100%;
+  align-items: center;
 }
 
 .autorisation-block {
   padding-left: 24px;
+  margin: auto;
 }
 
 .user-link {}
@@ -253,11 +263,12 @@ img {
 
 .user-block {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 .user-block .user-link {
   padding-left: 23px;
+  margin-left: 40px;
 }
 
 .header-nav {
@@ -300,7 +311,7 @@ img {
 
 .has-sublist {
   padding-right: 38px;
-  margin-right: 286px;
+  margin-right: auto;
 }
 
 .sublist {
@@ -341,20 +352,22 @@ img {
 
 .promo-slider {
   position: relative;
-  top: -117px;
+  top: -87px;
   counter-reset: myCounter;
 }
 
 .slider-controls {
-  position: relative;
-  top: 325px;
-  left: 911px;
+  position: absolute;
+  width: 72px;
+  bottom: 157px;
+  right: 88px;
 }
 
 .promo-slide {
   display: grid;
   grid-template-columns: 1fr 560px;
   counter-increment: myCounter;
+  position: relative;
 }
 
 .promo-slide-1 .promo-image {
@@ -390,7 +403,7 @@ img {
   font-size: 179px;
   line-height: 219px;
   position: absolute;
-  top: -45px;
+  top: -57px;
   right: 47px;
 }
 
@@ -505,47 +518,43 @@ img {
   margin: 0;
   margin-left: 116px;
   padding: 0;
+  position: relative;
+  top: -29px;
 }
 
 .service-item {
   position: relative;
-  top: -29px;
+}
+
+.service-slogan {
   width: 574px;
 }
 
-.service-delivery::before {
+.service-item::before {
   content: "";
   position: absolute;
-  width: 136px;
-  height: 164px;
   background-position: center;
   background-repeat: no-repeat;
+  right: 0;
+  top: 0;
+}
+
+.service-delivery::before {
+  width: 136px;
+  height: 164px;
   background-image: url(../img/delivery.svg);
-  right: -170px;
 }
 
 .service-guarantee::before {
-  content: "";
-  position: absolute;
   width: 171px;
   height: 195px;
-  background-position: center;
-  background-repeat: no-repeat;
   background-image: url(../img/warranty.svg);
-  right: -180px;
-  top: -17px;
 }
 
 .service-credit::before {
-  content: "";
-  position: absolute;
   width: 156px;
   height: 188px;
-  background-position: center;
-  background-repeat: no-repeat;
   background-image: url(../img/credit.svg);
-  right: -180px;
-  top: -17px;
 }
 
 .service-slogan-heading {

@@ -18,7 +18,7 @@
       <a href="#" class="main-logo"><img src="img/main-logo.svg" width="163" height="35" alt="Device"></a>
       <div class="navigation">
         <form action="https://echo.htmlacademy.ru" method="get" class="search-form">
-          <label for="search" class="visually-hidden">Поиск по сайту</label>
+          <label for="search" class="search-icon">Поиск по сайту</label>
           <input type="search" name="search" placeholder="Поиск по сайту" id="search" class="search-form-field">
           <button type="submit" id="submit" class="search-button">Найти</button>
         </form>
@@ -32,8 +32,8 @@
               -->
           </div>
           <div class="user-block">
-            <a href="#" class="user-link">Сравнить</a>
-            <a href="#" class="user-link">Корзина</a>
+            <a href="#" class="user-link compare">Сравнить</a>
+            <a href="#" class="user-link basket">Корзина</a>
           </div>
         </div>
       </div>
@@ -61,11 +61,11 @@
     <h1 class="visually-hidden">Магазин гаджетов Device</h1>
     <section class="promo-slider container">
       <div class="slider-controls">
-        <button type="button" name="toggle" disabled></button>
-        <button type="button" name="toggle"></button>
-        <button type="button" name="toggle"></button>
+        <button type="button" aria-label="Первый слайд" name="toggle" disabled></button>
+        <button type="button" aria-label="Второй слайд" name="toggle"></button>
+        <button type="button" aria-label="Третий слайд" name="toggle"></button>
       </div>
-      <article class="promo-slide promo-slide-1">
+      <article class="promo-slide promo-slide-1 promo-slide-active">
         <img src="img/slider-1.png" alt="Самая длинная палка для сэлфи" width="384" height="486" class="promo-image">
         <div class="promo-text">
           <h2 class="promo-slide-heading">Делай селфи,<br> как Бен Стиллер!</h2>
@@ -166,11 +166,17 @@
     </section>
     <section class="services">
       <div class="service-layout container">
-        <div class="service-slider">
-          <a class="button service-slider-item active" href="#">Доставка</a>
-          <a class="button service-slider-item" href="#">Гарантия</a>
-          <a class="button service-slider-item" href="#">Кредит</a>
-        </div>
+        <ul class="service-slider">
+     		<li class="service-nav current">
+       			<a class="service-slider-item active" href="#">Доставка</a>
+       		</li>
+     		<li class="service-nav">
+       			<a class="service-slider-item" href="#">Гарантия</a>
+       		</li>
+     		<li class="service-nav">
+       			<a class="service-slider-item" href="#">Кредит</a>
+       		</li>
+        </ul>
         <div class="service-slider-content">
           <div class="service-item service-delivery active">
             <div class="service-slogan">
@@ -261,8 +267,8 @@
                 -->
             </div>
             <div class="user-block">
-              <a href="#" class="user-link">Сравнить</a>
-              <a href="#" class="user-link">Корзина</a>
+            	<a href="#" class="user-link compare">Сравнить</a>
+            	<a href="#" class="user-link basket">Корзина</a>
             </div>
           </div>
         </nav>
@@ -282,9 +288,9 @@
     <div class="footer-bottom">
       <div class="footer-bottom-layout container">
         <div class="footer-social">
-          <a class="social-button social-button-vk" href="#">Фейсбук</a>
-          <a class="social-button social-button-fb" href="#">Инстаграм</a>
-          <a class="social-button social-button-inst" href="#">Твиттер</a>
+          <a class="social-button social-button-fb" href="#">Фейсбук</a>
+          <a class="social-button social-button-inst" href="#">Инстаграм</a>
+          <a class="social-button social-button-twit" href="#">Твиттер</a>
         </div>
         <div class="footer-creator">
           <a class="footer-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>

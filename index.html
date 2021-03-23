@@ -61,7 +61,7 @@
     <h1 class="visually-hidden">Магазин гаджетов Device</h1>
     <section class="promo-slider container">
       <div class="slider-controls">
-        <button type="button" aria-label="Первый слайд" name="toggle" disabled></button>
+        <button type="button" aria-label="Первый слайд" name="toggle" disabled class="slider-control-current"></button>
         <button type="button" aria-label="Второй слайд" name="toggle"></button>
         <button type="button" aria-label="Третий слайд" name="toggle"></button>
       </div>
@@ -167,15 +167,15 @@
     <section class="services">
       <div class="service-layout container">
         <ul class="service-slider">
-     		<li class="service-nav current">
-       			<a class="service-slider-item active" href="#">Доставка</a>
-       		</li>
-     		<li class="service-nav">
-       			<a class="service-slider-item" href="#">Гарантия</a>
-       		</li>
-     		<li class="service-nav">
-       			<a class="service-slider-item" href="#">Кредит</a>
-       		</li>
+          <li class="service-nav current">
+            <a class="service-slider-item active" href="#">Доставка</a>
+          </li>
+          <li class="service-nav">
+            <a class="service-slider-item" href="#">Гарантия</a>
+          </li>
+          <li class="service-nav">
+            <a class="service-slider-item" href="#">Кредит</a>
+          </li>
         </ul>
         <div class="service-slider-content">
           <div class="service-item service-delivery active">
@@ -267,8 +267,8 @@
                 -->
             </div>
             <div class="user-block">
-            	<a href="#" class="user-link compare">Сравнить</a>
-            	<a href="#" class="user-link basket">Корзина</a>
+              <a href="#" class="user-link compare">Сравнить</a>
+              <a href="#" class="user-link basket">Корзина</a>
             </div>
           </div>
         </nav>
@@ -298,19 +298,18 @@
       </div>
     </div>
   </footer>
-  <div class="modal-write">
-    <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+  <div class="modal modal-write">
     <form id="write-form" class="modal-write-form" action="https://echo.htmlacademy.ru" method="post">
-      <label class="modal-label" for="user-name">Ваше имя:</label>
-      <input id="user-name" class="modal-input" type="text" name="username" placeholder="Представьтесь, пожалуйста" required>
-      <label class="modal-label" for="email">Ваш e-mail:</label>
-      <input id="email" type="email" class="modal-input" name="email" placeholder="Для отправки ответа" required>
-      <label for="user-comment" class="modal-label">Текст письма:</label>
-      <textarea id="user-comment" class="modal-input" name="comment" rows="6" placeholder="В свободной форме" required></textarea>
+      <div class="form-feedback">
+        <label class="modal-label" for="user-name">Ваше имя:<input id="user-name" class="modal-input" type="text" name="username" placeholder="Представьтесь, пожалуйста" required></label>
+        <label class="modal-label" for="email">Ваш e-mail:<input id="email" type="email" class="modal-input" name="email" placeholder="Для отправки ответа" required></label>
+        <label for="user-comment" class="modal-label textarea-label">Текст письма:<textarea id="user-comment" class="modal-input taxtarea-input" name="comment" rows="6" placeholder="В свободной форме" required></textarea></label>
+      </div>
       <button type="submit" class="write-submit button">Отправить</button>
     </form>
+    <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
   </div>
-  <div class="modal-content-map">
+  <div class="modal modal-content-map">
     <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
   </div>
   <script src="js/script.js"></script>

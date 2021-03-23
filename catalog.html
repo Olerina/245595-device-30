@@ -273,17 +273,16 @@
       </div>
     </div>
   </footer>
-  <div class="modal-write">
-    <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+  <div class="modal modal-write">
     <form id="write-form" class="modal-write-form" action="https://echo.htmlacademy.ru" method="post">
-      <label class="modal-label" for="user-name">Ваше имя:</label>
-      <input id="user-name" class="modal-input" type="text" name="username" placeholder="Представьтесь, пожалуйста" required>
-      <label class="modal-label" for="email">Ваш e-mail:</label>
-      <input id="email" type="email" class="modal-input" name="email" placeholder="Для отправки ответа" required>
-      <label for="user-comment" class="modal-label">Текст письма:</label>
-      <textarea id="user-comment" class="modal-input" name="comment" rows="6" placeholder="В свободной форме" required></textarea>
+      <div class="form-feedback">
+        <label class="modal-label" for="user-name">Ваше имя:<input id="user-name" class="modal-input" type="text" name="username" placeholder="Представьтесь, пожалуйста" required></label>
+        <label class="modal-label" for="email">Ваш e-mail:<input id="email" type="email" class="modal-input" name="email" placeholder="Для отправки ответа" required></label>
+        <label for="user-comment" class="modal-label textarea-label">Текст письма:<textarea id="user-comment" class="modal-input taxtarea-input" name="comment" rows="6" placeholder="В свободной форме" required></textarea></label>
+      </div>
       <button type="submit" class="write-submit button">Отправить</button>
     </form>
+    <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
   </div>
   <script src="js/script.js"></script>
 </body>

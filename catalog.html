@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/min-style.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/180.png">
@@ -15,7 +15,7 @@
 <body>
   <div class="container">
     <header class="main-header">
-      <a href="#" class="main-logo"><img src="img/main-logo.svg" width="163" height="35" alt="Device"></a>
+      <a href="index.html" class="main-logo"><img src="img/main-logo.svg" width="163" height="35" alt="Device"></a>
       <div class="navigation">
         <form action="https://echo.htmlacademy.ru" method="get" class="search-form">
           <label for="search" class="search-icon">Поиск по сайту</label>
@@ -37,10 +37,10 @@
           </div>
         </div>
       </div>
-      <nav class="header-nav">
+      <nav class="header-nav catalog-nav">
         <ul class="main-navigation">
           <li class="main-navigation-item has-sublist">
-            <a class="main-navigation-link" href="catalog.html">Каталог товаров</a>
+            <a class="main-navigation-link" href="#">Каталог товаров</a>
             <ul class="sublist">
               <li><a href="#">Виртуальная реальность</a></li>
               <li><a href="#">Фитнесс-браслеты</a></li>
@@ -104,8 +104,8 @@
                   <div class="scale">
                     <div class="bar" style="width: 60%; margin-left: 0"></div>
                   </div>
-                  <div class="toggle toggle-min" style="left: -3%"></div>
-                  <div class="toggle toggle-max" style="left: 53%"></div>
+                  <div class="toggle toggle-min" style="left: 0%"></div>
+                  <div class="toggle toggle-max" style="left: 57%"></div>
                 </div>
                 <div class="price-controls">
                   <label class="price-label" for="min-price">от</label>
@@ -168,7 +168,7 @@
                 </div>
                 <div class="product-info-wrapper">
                   <a class="top-item-title" href="#">Любительская селфи-палка</a>
-                  <p class="top-item-price">500 руб.</p>
+                  <p class="top-item-price">1 100 руб.</p>
                 </div>
               </article>
               <article class="top-item">
@@ -181,7 +181,7 @@
 
                 </div>
                 <div class="product-info-wrapper"><a class="top-item-title" href="#">Профессиональная <br>селфи-палка</a>
-                  <p class="top-item-price">1500 руб.</p>
+                  <p class="top-item-price">1 500 руб.</p>
                 </div>
 
               </article>
@@ -195,7 +195,7 @@
 
                 </div>
                 <div class="product-info-wrapper"><a class="top-item-title" href="#">Непотопляемая <br>селфи-палка</a>
-                  <p class="top-item-price">2500 руб.</p>
+                  <p class="top-item-price">1 500 руб.</p>
                 </div>
 
               </article>
@@ -209,7 +209,7 @@
 
                 </div>
                 <div class="product-info-wrapper"><a class="top-item-title" href="#">Селфи-палка "Следуй за мной"</a>
-                  <p class="top-item-price">4900 руб.</p>
+                  <p class="top-item-price">1 900 руб.</p>
                 </div>
               </article>
               <div class="catalog-navigation">
@@ -230,7 +230,7 @@
   <footer class="main-footer">
     <div class="footer-top">
       <div class="footer-top-layout container">
-        <a href="#" class="footer-logo-link"><img src="img/footer-logo.svg" width="163" height="35" alt="Device"></a>
+        <a href="index.html" class="footer-logo-link"><img src="img/footer-logo.svg" width="163" height="35" alt="Device"></a>
         <nav class="footer-navigation">
           <div class="user-navigation">
             <div class="autorisation-block">
@@ -273,18 +273,7 @@
       </div>
     </div>
   </footer>
-  <div class="modal modal-write">
-    <form id="write-form" class="modal-write-form" action="https://echo.htmlacademy.ru" method="post">
-      <div class="form-feedback">
-        <label class="modal-label" for="email">Ваш e-mail:<input id="email" type="email" class="modal-input modal-email-user" name="email" placeholder="Для отправки ответа" required></label>
-        <label class="modal-label" for="user-name">Ваше имя:<input id="user-name" class="modal-input modal-login-user" type="text" name="username" placeholder="Представьтесь, пожалуйста" required></label>
-        <label for="user-comment" class="modal-label textarea-label">Текст письма:<textarea id="user-comment" class="modal-input taxtarea-input" name="comment" rows="6" placeholder="В свободной форме" required></textarea></label>
-      </div>
-      <button type="submit" class="write-submit button">Отправить</button>
-    </form>
-    <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
-  </div>
-  <script src="js/script.js"></script>
+  <script src="js/min-script.js"></script>
 </body>
 
 </html>

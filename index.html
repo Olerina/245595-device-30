@@ -25,7 +25,7 @@
         <div class="user-navigation">
           <div class="autorisation-block">
             <!--Блок незарегистрированного пользователя, согласно макета-->
-            <a class="login user-button user-link" href="#">Войти</a>
+            <a class="login user-button user-link" href="login.html">Войти</a>
             <!--Блок зарегистрированного пользователя. block один на две ссылки для удобства построения сетки
               <a class="profile user-link" href="#">Валентин Петухов</a>
               <a class="exit user-link" href="#">Выйти</a>
@@ -301,8 +301,8 @@
   <div class="modal modal-write">
     <form id="write-form" class="modal-write-form" action="https://echo.htmlacademy.ru" method="post">
       <div class="form-feedback">
-        <label class="modal-label" for="user-name">Ваше имя:<input id="user-name" class="modal-input" type="text" name="username" placeholder="Представьтесь, пожалуйста" required></label>
-        <label class="modal-label" for="email">Ваш e-mail:<input id="email" type="email" class="modal-input" name="email" placeholder="Для отправки ответа" required></label>
+        <label class="modal-label" for="email">Ваш e-mail:<input id="email" type="email" class="modal-input modal-email-user" name="email" placeholder="Для отправки ответа" required></label>
+        <label class="modal-label" for="user-name">Ваше имя:<input id="user-name" class="modal-input modal-login-user" type="text" name="username" placeholder="Представьтесь, пожалуйста" required></label>
         <label for="user-comment" class="modal-label textarea-label">Текст письма:<textarea id="user-comment" class="modal-input taxtarea-input" name="comment" rows="6" placeholder="В свободной форме" required></textarea></label>
       </div>
       <button type="submit" class="write-submit button">Отправить</button>
@@ -310,6 +310,8 @@
     <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
   </div>
   <div class="modal modal-content-map">
+  	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4498.1553158150755!2d37.5284326!3d55.6876376!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1522103678551" width="960" height="560" style="border:0" allowfullscreen></iframe>
+      <img src="img/map-big.jpg" alt="Офис компании по адресу Улица строителей, 15, Москва" width="960" height="560">
     <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
   </div>
   <script src="js/script.js"></script>

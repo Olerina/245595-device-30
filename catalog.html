@@ -41,7 +41,7 @@
         <ul class="main-navigation">
           <li class="main-navigation-item has-sublist">
             <a class="main-navigation-link" href="catalog.html">Каталог товаров</a>
-            <ul class="sublist catalog-sublist">
+            <ul class="sublist">
               <li><a href="#">Виртуальная реальность</a></li>
               <li><a href="#">Фитнесс-браслеты</a></li>
               <li><a href="#">Квадрокоптер</a></li>
@@ -276,8 +276,8 @@
   <div class="modal modal-write">
     <form id="write-form" class="modal-write-form" action="https://echo.htmlacademy.ru" method="post">
       <div class="form-feedback">
-        <label class="modal-label" for="user-name">Ваше имя:<input id="user-name" class="modal-input" type="text" name="username" placeholder="Представьтесь, пожалуйста" required></label>
-        <label class="modal-label" for="email">Ваш e-mail:<input id="email" type="email" class="modal-input" name="email" placeholder="Для отправки ответа" required></label>
+        <label class="modal-label" for="email">Ваш e-mail:<input id="email" type="email" class="modal-input modal-email-user" name="email" placeholder="Для отправки ответа" required></label>
+        <label class="modal-label" for="user-name">Ваше имя:<input id="user-name" class="modal-input modal-login-user" type="text" name="username" placeholder="Представьтесь, пожалуйста" required></label>
         <label for="user-comment" class="modal-label textarea-label">Текст письма:<textarea id="user-comment" class="modal-input taxtarea-input" name="comment" rows="6" placeholder="В свободной форме" required></textarea></label>
       </div>
       <button type="submit" class="write-submit button">Отправить</button>

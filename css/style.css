@@ -756,8 +756,8 @@ img {
   min-height: 385px;
   margin-bottom: 92px;
   background-color: var(--basic-grey-light);
-  background-image: -webkit-gradient( linear, left top, left bottom, from(var(--basic-white)), color-stop(25%, var(--basic-white)), color-stop(25%, var(--basic-grey-light)), to(var(--basic-grey-light)));
   background-image: -o-linear-gradient( top, var(--basic-white) 0%, var(--basic-white) 25%, var(--basic-grey-light) 25%, var(--basic-grey-light) 100%);
+  background-image: -webkit-gradient( linear, left top, left bottom, from(var(--basic-white)), color-stop(25%, var(--basic-white)), color-stop(25%, var(--basic-grey-light)), to(var(--basic-grey-light)));
   background-image: linear-gradient( to bottom, var(--basic-white) 0%, var(--basic-white) 25%, var(--basic-grey-light) 25%, var(--basic-grey-light) 100%);
 }
 
@@ -1071,7 +1071,7 @@ img {
   -ms-grid-columns: 1fr 1fr -webkit-max-content;
   -ms-grid-columns: 1fr 1fr max-content;
   grid-template-columns: 1fr 1fr -webkit-max-content;
-  grid-template-columns: 1fr 1fr max-content;
+  grid-template-columns: 1fr 1fr 1fr;
   position: relative;
 }
 
@@ -1172,11 +1172,12 @@ img {
   display: inline-block;
   vertical-align: middle;
   opacity: 0.3;
-  margin-right: 20px;
+  margin-right: 15px;
 }
 
 .social-button-fb {
   background: url(../img/icon_facebook.svg) no-repeat center;
+  margin-left: 125px;
 }
 
 .social-button-inst {
@@ -1202,6 +1203,15 @@ img {
   display: inline-block;
   vertical-align: middle;
   background: url(../img/logo-html.png) no-repeat center;
+}
+
+.footer-creator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .footer-link:hover {
@@ -1275,8 +1285,8 @@ img {
 }
 
 .catalog-titles {
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, var(--filter-grey)), color-stop(28%, var(--filter-grey)), color-stop(28%, var(--basic-grey-light)), to(var(--basic-grey-light)));
   background-image: -o-linear-gradient(left, var(--filter-grey) 0, var(--filter-grey) 28%, var(--basic-grey-light) 28%, var(--basic-grey-light) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, var(--filter-grey)), color-stop(28%, var(--filter-grey)), color-stop(28%, var(--basic-grey-light)), to(var(--basic-grey-light)));
   background-image: linear-gradient(to right, var(--filter-grey) 0, var(--filter-grey) 28%, var(--basic-grey-light) 28%, var(--basic-grey-light) 100%);
   min-height: 70px;
 }
@@ -1407,8 +1417,8 @@ img {
 }
 
 .catalog-content {
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, var(--basic-grey-light)), color-stop(28%, var(--basic-grey-light)), color-stop(28%, var(--basic-white)), to(var(--basic-white)));
   background-image: -o-linear-gradient(left, var(--basic-grey-light) 0, var(--basic-grey-light) 28%, var(--basic-white) 28%, var(--basic-white) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, var(--basic-grey-light)), color-stop(28%, var(--basic-grey-light)), color-stop(28%, var(--basic-white)), to(var(--basic-white)));
   background-image: linear-gradient(to right, var(--basic-grey-light) 0, var(--basic-grey-light) 28%, var(--basic-white) 28%, var(--basic-white) 100%);
 }
 
